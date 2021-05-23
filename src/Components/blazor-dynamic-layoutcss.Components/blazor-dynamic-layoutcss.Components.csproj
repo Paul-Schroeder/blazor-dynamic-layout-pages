@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>blazor_dynamic_layoutcss.Components</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\SwitchableLayoutComponent.razor" />
+    <None Remove="Shared\Layout1.razor" />
+    <None Remove="Shared\Layout2.razor" />
+    <None Remove="wwwroot\css\sample1.css" />
+    <None Remove="wwwroot\css\sample2.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\SwitchableLayoutComponent.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Include="Shared\Layout1.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Include="Shared\Layout2.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Include="wwwroot\css\sample1.css" />
+    <Content Include="wwwroot\css\sample2.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

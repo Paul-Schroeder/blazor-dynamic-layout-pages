@@ -1,0 +1,20 @@
+﻿@page "/SwappablePage"
+@attribute [DynamicLayout()]
+
+<h3>Click the links below to view the same page with different layouts and CSS classes.</h3>
+
+<div>
+    <a href="SwappablePage?l=1&c=1">Alternate Layout, CSS Sample 1</a>
+</div>
+<div>
+    <a href="SwappablePage?l=1&c=2">Alternate Layout, CSS Sample 2</a>
+</div>
+<div>
+    <a href="SwappablePage?l=2&c=1">Main Layout, CSS Sample 1</a>
+</div>
+<div>
+    <a href="SwappablePage?l=2&c=2">Main Layout, CSS Sample 2</a>
+</div>
+
+@code {
+}
